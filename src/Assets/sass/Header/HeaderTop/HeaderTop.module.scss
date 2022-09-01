@@ -1,0 +1,96 @@
+@use "../../variables.scss" as variables;
+
+.row1 {
+    height: 3rem;
+}
+
+.locPosition {
+    position: relative;
+    top: 10px;
+}
+
+.numPosition {
+    position: relative;
+    top: 10px;
+}
+
+.socialPosition {
+    position: relative;
+    top: 10px;
+}
+
+.locImage {
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin-right: 6px;
+}
+
+.dotImage {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    bottom: 10px;
+    float: left;
+}
+
+.teleImage {
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin-right: 12px;
+}
+
+.envelopeImage {
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin-right: 12px;
+}
+
+.fbImage {
+    height: 22px;
+    width: 22px;
+    float: left;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.instaImage {
+    height: 22px;
+    width: 22px;
+    float: left;
+    margin-right: 2rem;
+}
+
+.linkedImage {
+    height: 22px;
+    width: 22px;
+    margin-right: 2rem;
+}
+.locationText1 {
+    color: white;
+    float: left;
+}
+
+.locationText2 {
+    color: white;
+}
+
+.locationCol {
+    background-color: variables.$header-background;
+}
+
+.numText {
+    color: white;
+    float: left;
+    margin-right: 5rem;
+}
+
+.mailText {
+    color: white;
+}
+
+.socialCol {
+    background-color: variables.$header-icon;
+}
