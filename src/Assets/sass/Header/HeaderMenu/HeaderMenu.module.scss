@@ -1,0 +1,118 @@
+@use "../../variables.scss" as variables;
+
+.rowStyle {
+    background-color: transparent;
+    height: 300px;
+    padding-top: 1.5rem;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 10rem;
+}
+
+.linkStyle {
+    color: variables.$header-text !important;
+    margin-right: 3rem;
+    padding: 0px !important;
+    font-weight: 500 !important;
+}
+
+.imgContainer {
+    position: relative;
+    left: -100px;
+    top: -20px;
+}
+
+.linkStyle {
+    transition: 0.5s;
+}
+
+.navStyle:hover .linkStyle {
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+}
+
+.navStyle .linkStyle:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+    color: variables.$header-text;
+}
+
+.navStyle .linkStyle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: variables.$header-icon;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+.navStyle .linkStyle:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .linkStyle {
+        margin-right: 27px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .linkStyle {
+        margin-right: 6px;
+    }
+
+    .logo {
+        margin-left: 6rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .imgContainer {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    .navbarStyle {
+        position: relative !important;
+        top: -1rem !important;
+        background-color: variables.$header-background;
+        width: 40%;
+    }
+
+    .toggleStyle {
+        background-color: variables.$header-icon !important;
+        border: 0px;
+    }
+
+    .linkStyle {
+        margin-top: 1rem;
+        margin-left: 4px;
+    }
+
+    .navStyle:hover .linkStyle {
+        transform: scale(1);
+    }
+
+    .navStyle .linkStyle:hover {
+        transform: scale(1);
+    }
+
+    .navStyle .linkStyle:hover:before {
+        transition: transform 0.5s;
+        transform-origin: left;
+        transform: scaleX(0.5);
+    }
+}

@@ -2,21 +2,25 @@
 
 .row1 {
     height: 3rem;
+    z-index: 1000;
 }
 
 .locPosition {
     position: relative;
     top: 10px;
+    margin-left: 8rem;
 }
 
 .numPosition {
     position: relative;
     top: 10px;
+    margin-left: 4rem;
 }
 
 .socialPosition {
     position: relative;
     top: 10px;
+    z-index: 2;
 }
 
 .locImage {
@@ -69,28 +73,102 @@
     margin-right: 2rem;
 }
 .locationText1 {
-    color: white;
+    color: variables.$header-text;
     float: left;
 }
 
 .locationText2 {
-    color: white;
+    color: variables.$header-text;
 }
 
 .locationCol {
     background-color: variables.$header-background;
 }
 
+.numCol {
+    background-color: variables.$header-background;
+}
+
 .numText {
-    color: white;
+    color: variables.$header-text;
     float: left;
     margin-right: 5rem;
 }
 
 .mailText {
-    color: white;
+    color: variables.$header-text;
 }
 
 .socialCol {
     background-color: variables.$header-icon;
+    position: relative;
+}
+
+.socialCol:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: variables.$header-icon;
+    transform-origin: bottom left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(44deg, 0deg);
+    z-index: 1;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .locPosition {
+        margin-left: 5rem;
+    }
+
+    .numPosition {
+        margin-left: 0rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .locPosition {
+        margin-left: 4rem;
+    }
+
+    .numPosition {
+        margin-left: -4rem;
+    }
+    .fbImage {
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .instaImage {
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .linkedImage {
+        margin: 0;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .locPosition {
+        margin-left: 0rem;
+    }
+    .numPosition {
+        margin-left: 1rem;
+    }
+
+    .socialPosition {
+        position: relative;
+        top: 0px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+    
 }

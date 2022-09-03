@@ -9,14 +9,13 @@ import envelopeImage from "../../../Assets/images/envelope.png";
 import fbImage from "../../../Assets/images/facebook-app-symbol.png";
 import instaImage from "../../../Assets/images/instagram.png";
 import linkedImage from "../../../Assets/images/linkedin.png";
-
 import style from "../../../Assets/sass/Header/HeaderTop/HeaderTop.module.scss";
 
 const HeaderTop = () => {
     return (
         <>
             <Row className={style.row1}>
-                <Col lg='5' className={style.locationCol}>
+                <Col xxl='6' xl='5' lg='6' md='6' sm='7' className={style.locationCol}>
                     <div className={style.locPosition}>
                         <Image src={locImage} fluid className={style.locImage}></Image>
                         <p className={style.locationText1}>1161 40th Ave NE </p>
@@ -25,7 +24,7 @@ const HeaderTop = () => {
                         <p className={style.locationText2}>Calgary, Alberta</p>
                     </div>
                 </Col>
-                <Col lg='4' className={style.locationCol}>
+                <Col xxl='4' xl='4' lg='4' md='6' sm='5' className={style.numCol}>
                     <div className={style.numPosition}>
                         <Image src={teleImage} fluid className={style.teleImage}></Image>
                         <p className={style.numText}>(403) 769 - 1799 </p>
@@ -34,7 +33,7 @@ const HeaderTop = () => {
                         <p className={style.mailText}>Email Us</p>
                     </div>
                 </Col>
-                <Col lg='3' className={style.socialCol}>
+                <Col xxl='2' xl='3' lg='2' md='12' sm='12' className={style.socialCol}>
                     <div className={style.socialPosition}>
                         <Image src={fbImage} fluid className={style.fbImage}></Image>
                         <Image src={instaImage} fluid className={style.instaImage}></Image>

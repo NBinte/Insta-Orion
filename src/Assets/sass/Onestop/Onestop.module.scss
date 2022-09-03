@@ -1,0 +1,124 @@
+@use "../variables.scss" as variables;
+
+.row1 {
+    background-color: variables.$header-text;
+    position: relative;
+    top: -42rem;
+    justify-content: center;
+}
+
+.imgContainer {
+    position: relative;
+    top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.textContainer {
+    position: relative;
+    top: 7rem;
+}
+
+.button1 {
+    padding: 12px 32px 12px 32px !important;
+    border-radius: 0 !important;
+}
+
+.button2 {
+    padding: 12px 32px 12px 32px !important;
+    border-radius: 0 !important;
+}
+
+.text1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.text2 {
+    width: 55%;
+    margin-bottom: 2rem;
+}
+
+.text3 {
+    width: 56%;
+    margin-bottom: 2rem;
+}
+
+.button1 {
+    border: 3px solid variables.$header-icon !important;
+    transition: 0.25s;
+}
+
+.button2 {
+    border: 3px solid variables.$header-icon !important;
+    transition: 0.25s;
+}
+
+.button1:hover,
+.button1:focus {
+    box-shadow: inset 10.5em 0 0 0 variables.$header-text;
+    color: black !important;
+}
+
+.button2:hover,
+.button2:focus {
+    box-shadow: inset 10.5em 0 0 0 variables.$header-icon;
+    color: variables.$header-text !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .row1 {
+        position: relative;
+        top: -36rem;
+    }
+
+    .text2 {
+        width: 70%;
+    }
+
+    .text3 {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .row1 {
+        position: relative;
+        top: -28rem;
+    }
+
+    .text2 {
+        width: 80%;
+    }
+
+    .text3 {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .row1 {
+        position: relative;
+        top: -20rem;
+        align-items: center;
+    }
+
+    .text2 {
+        width: 95%;
+    }
+
+    .text3 {
+        width: 95%;
+    }
+
+    .textContainer {
+        position: relative;
+        top: 5rem;
+    }
+    .imgContainer {
+        position: relative;
+        top: 0rem;
+        left: 1rem;
+    }
+}

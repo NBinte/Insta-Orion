@@ -1,0 +1,59 @@
+@use "../../sass/variables" as variables;
+
+.banner1Text1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: -25px;
+}
+
+.banner1Text2 {
+    color: variables.$header-text;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.captionPos {
+    position: relative;
+    top: 15rem;
+}
+
+.button1 {
+    padding: 12px 32px 12px 32px !important;
+    border-radius: 0 !important;
+}
+
+.button1 {
+    border: 3px solid variables.$header-icon !important;
+    transition: 0.25s;
+}
+
+.button1:hover,
+.button1:focus {
+    box-shadow: inset 10.5em 0 0 0 variables.$header-text;
+    color: variables.$header-background !important;
+}
+
+.caro1 {
+    z-index: -1;
+    position: relative;
+    top: -22rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .caro1 {
+        position: relative;
+        top: -19rem;
+    }
+
+    .banner1Text2 {
+        font-size: 1.5rem;
+    }
+
+    .banner1Text1 {
+        font-size: 5rem;
+    }
+}
